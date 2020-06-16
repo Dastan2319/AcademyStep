@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">AcademyStep</string>
+    <string name="activity_main_not_pressed">Not pressed</string>
+    <string name="activity_main_button_text">Press me</string>
+    <string name="activity_main_button_hide_view">Hide view</string>
+    <string name="activity_main_button_check_from_const">Check from const</string>
+    <string name="activity_main_it_is_so_sad">It is so sad =(</string>
+    <string name="activity_main_error_pass">Error password</string>
+    <string name="activity_students_btn_sort_students">Сортировка студентов</string>
+    <string name="activity_students_btn_sort_students_random">Сортировка студентов рандомно</string>
+
 </resources>
