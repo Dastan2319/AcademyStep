@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "290290033853",
+    "firebase_url": "https://example-f5d77.firebaseio.com",
+    "project_id": "example-f5d77",
+    "storage_bucket": "example-f5d77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290290033853:android:e056f5f2a19c8fc4e743d4",
+        "android_client_info": {
+          "package_name": "kz.example.academystep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290290033853-4qhcp9pls4prfmcnukuaim8r2g0lnbb3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIMENzFW5K3E7fYPgtAauR2S4PuKkrnh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290290033853-4qhcp9pls4prfmcnukuaim8r2g0lnbb3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

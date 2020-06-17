@@ -14,31 +14,36 @@ class StudentActivity :AppCompatActivity(){
     var textViewStudentList: TextView?=null
     var studentsList:ArrayList<String> = ArrayList();
     var sort:SortStudentUseCase = SortStudentUseCase();
-    override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
-        super.onCreate(savedInstanceState, persistentState);
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_students);
         initialView();
+        initialListener();
     }
 
     fun initialView(){
 
-        textViewStudentList=findViewById(R.id.textview_activity_students_list)
+//        textViewStudentList=findViewById(R.id.textview_activity_students_list)
+        btnSortByName =  findViewById(R.id.button_activity_sort_students);
+        btnSortRandom =  findViewById(R.id.button_activity_sort_random);
         studentsList.add("First");
         studentsList.add("Second")
         studentsList.add("Three");
         studentsList.add("Four");
         studentsList.add("Five");
         studentsList.add("Six");
-        textViewStudentList?.setText(studentsList.toString());
+//        textViewStudentList?.setText(studentsList.toString());
 
     }
 
     fun initialListener(){
         btnSortByName!!.setOnClickListener(View.OnClickListener {
-            textViewStudentList?.setText(sort.sortByName(studentsList).toString());
+            textViewStudentList?.setText("asddsa");
+//            textViewStudentList?.setText(sort.sortByName(studentsList).toString());
         })
-        btnSortRandom!!.setOnClickListener(View.OnClickListener {
-            textViewStudentList?.setText(sort.sortRandom(studentsList).toString());
-        })
+//        btnSortRandom!!.setOnClickListener(View.OnClickListener {
+//            textViewStudentList?.setText(sort.sortRandom(studentsList).toString());
+//        })
     }
 }
