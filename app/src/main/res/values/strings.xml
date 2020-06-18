@@ -8,5 +8,11 @@
     <string name="activity_main_error_pass">Error password</string>
     <string name="activity_students_btn_sort_students">Сортировка студентов</string>
     <string name="activity_students_btn_sort_students_random">Сортировка студентов рандомно</string>
+    <string name="activity_project_btn_next_page">Перейти на следущию страницу</string>
+    <string name="activity_name_check_editor">Введите текст</string>
+    <string name="activity_name_check_status">Статус</string>
+    <string name="activity_name_check_action">Проверка</string>
+    <string name="activity_name_check_error">Error, we have digits in our name!</string>
+    <string name="activity_name_check_success">“Everithing looks fine!</string>
 
 </resources>

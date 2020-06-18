@@ -41,6 +41,12 @@
         android:id="@+id/checkFromConst"
         android:text="@string/activity_main_button_check_from_const"/>
 
+    <Button
+        android:id="@+id/nextPageBtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="@string/activity_project_btn_next_page"/>
 
 
 </LinearLayout>

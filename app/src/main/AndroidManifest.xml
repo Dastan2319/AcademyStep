@@ -20,6 +20,9 @@
         <activity android:name=".StudentActivity">
 
         </activity>
+        <activity android:name=".NameCheck">
+
+        </activity>
     </application>
 
 </manifest>

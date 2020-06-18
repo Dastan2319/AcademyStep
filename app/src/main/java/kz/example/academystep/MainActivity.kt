@@ -17,18 +17,17 @@ class MainActivity : AppCompatActivity() {
     var textPassword: EditText?=null
     var TextViewPress: TextView?=null
     var allCheckBox =ArrayList<CheckBox>()
-
+    var nextPageBtn: Button?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         init()
         initListener()
-        startActivity(Intent(this,StudentActivity::class.java))
 
     }
 
     fun init(){
-
+        nextPageBtn = findViewById(R.id.nextPageBtn)
         btnHideView = findViewById(R.id.hideViewBtn);
         textLogin = findViewById(R.id.editTextFirst);
         textPassword = findViewById(R.id.editTextSecond);
@@ -56,6 +55,9 @@ class MainActivity : AppCompatActivity() {
             }else{
                 TextViewPress!!.setText(R.string.activity_main_error_pass);
             }
+        });
+        nextPageBtn!!.setOnClickListener(View.OnClickListener {
+                  startActivity(Intent(this,NameCheck::class.java));
         })
 
 
