@@ -3,7 +3,8 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbarAlwaysDrawHorizontalTrack="true">
 
     <TextView
         android:layout_width="181dp"
@@ -41,12 +42,29 @@
         android:id="@+id/checkFromConst"
         android:text="@string/activity_main_button_check_from_const"/>
 
+    <EditText
+        android:id="@+id/editTextSendMsg"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="70dp"/>
     <Button
         android:id="@+id/nextPageBtn"
         android:layout_width="250dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
-        android:text="@string/activity_project_btn_next_page"/>
+        android:text="@string/activity_project_btn_next_page" />
 
+    <Button
+        android:id="@+id/btnOpenPicture"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="@string/activity_project_btn_open_picture" />
 
+    <Button
+        android:id="@+id/btnOpenRegistration"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="@string/activity_project_btn_open_registration" />
 </LinearLayout>

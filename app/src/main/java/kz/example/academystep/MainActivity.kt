@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
     var TextViewPress: TextView?=null
     var allCheckBox =ArrayList<CheckBox>()
     var nextPageBtn: Button?=null
+    var editTextSendMsg:EditText?=null;
+    var btnOpenPicture:Button?=null;
+    var btnOpenRegistration:Button?=null;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,13 +30,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun init(){
-        nextPageBtn = findViewById(R.id.nextPageBtn)
+        btnOpenRegistration=findViewById(R.id.btnOpenRegistration);
+        nextPageBtn = findViewById(R.id.nextPageBtn);
         btnHideView = findViewById(R.id.hideViewBtn);
         textLogin = findViewById(R.id.editTextFirst);
         textPassword = findViewById(R.id.editTextSecond);
         TextViewPress = findViewById(R.id.TextViewPress)
         btnAction = findViewById(R.id.checkFromConst)
-
+        editTextSendMsg=findViewById(R.id.editTextSendMsg)
+        btnOpenPicture=findViewById(R.id.btnOpenPicture)
     }
 
     fun initListener(){
@@ -57,9 +62,19 @@ class MainActivity : AppCompatActivity() {
             }
         });
         nextPageBtn!!.setOnClickListener(View.OnClickListener {
-                  startActivity(Intent(this,NameCheck::class.java));
+            val intent=Intent(this,DateActivity::class.java);
+            intent.putExtra("item",editTextSendMsg!!.text.toString());
+            startActivity(intent);
         })
 
+        btnOpenPicture!!.setOnClickListener(View.OnClickListener {
+            val intent=Intent(this,ImageActivity::class.java);
+            startActivity(intent);
+        })
+        btnOpenRegistration!!.setOnClickListener(View.OnClickListener {
+            val intent=Intent(this,RegistrationActivity::class.java);
+            startActivity(intent);
+        })
 
     }
 }
