@@ -25,4 +25,7 @@
     <string name="activity_registretion_pass_label">Пароль</string>
     <string name="activity_registretion_confirm_pass_label">Повторите пароль</string>
 
+
+    <string name="activity_project_btn_open_test_game">Открыть игру</string>
+
 </resources>

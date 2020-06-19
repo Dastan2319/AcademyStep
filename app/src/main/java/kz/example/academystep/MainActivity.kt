@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
     var editTextSendMsg:EditText?=null;
     var btnOpenPicture:Button?=null;
     var btnOpenRegistration:Button?=null;
+    var btnOpenTestGame:Button?=null;
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -38,7 +40,8 @@ class MainActivity : AppCompatActivity() {
         TextViewPress = findViewById(R.id.TextViewPress)
         btnAction = findViewById(R.id.checkFromConst)
         editTextSendMsg=findViewById(R.id.editTextSendMsg)
-        btnOpenPicture=findViewById(R.id.btnOpenPicture)
+        btnOpenPicture=findViewById(R.id.btnOpenPicture);
+        btnOpenTestGame=findViewById(R.id.btnOpenTestGame)
     }
 
     fun initListener(){
@@ -73,6 +76,11 @@ class MainActivity : AppCompatActivity() {
         })
         btnOpenRegistration!!.setOnClickListener(View.OnClickListener {
             val intent=Intent(this,RegistrationActivity::class.java);
+            startActivity(intent);
+        })
+
+        btnOpenTestGame!!.setOnClickListener(View.OnClickListener {
+            val intent=Intent(this,TestActivity::class.java);
             startActivity(intent);
         })
 
