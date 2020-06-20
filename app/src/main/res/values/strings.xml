@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AcademyStep</string>
+    <string name="app_name">Nip_Team</string>
     <string name="activity_main_not_pressed">Not pressed</string>
     <string name="activity_main_button_text">Press me</string>
     <string name="activity_main_button_hide_view">Hide view</string>
@@ -29,5 +29,8 @@
     <string name="activity_project_btn_open_test_game">Открыть игру</string>
     <string name="activity_project_btn_open_students">Перейти к студентам</string>
 
+
+    <string name="activity_permission_camera">Камера</string>
+    <string name="activity_permission_call">Звонок</string>
 
 </resources>
