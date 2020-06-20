@@ -27,5 +27,7 @@
 
 
     <string name="activity_project_btn_open_test_game">Открыть игру</string>
+    <string name="activity_project_btn_open_students">Перейти к студентам</string>
+
 
 </resources>

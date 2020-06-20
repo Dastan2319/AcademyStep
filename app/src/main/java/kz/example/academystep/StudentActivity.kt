@@ -24,26 +24,31 @@ class StudentActivity :AppCompatActivity(){
 
     fun initialView(){
 
-//        textViewStudentList=findViewById(R.id.textview_activity_students_list)
+        textViewStudentList=findViewById(R.id.textview_activity_students_list)
         btnSortByName =  findViewById(R.id.button_activity_sort_students);
         btnSortRandom =  findViewById(R.id.button_activity_sort_random);
-        studentsList.add("First");
-        studentsList.add("Second")
-        studentsList.add("Three");
-        studentsList.add("Four");
-        studentsList.add("Five");
-        studentsList.add("Six");
-//        textViewStudentList?.setText(studentsList.toString());
+        studentsList.add("ALice");
+        studentsList.add("Baukanur")
+        studentsList.add("Nurlan");
+        studentsList.add("SomeOne");
+        studentsList.add("Zelda");
+        studentsList.add("CS");
+        studentsList.add("Test");
+        studentsList.add("People")
+        studentsList.add("Moskva");
+        studentsList.add("Astana");
+        studentsList.add("What");
+        studentsList.add("Go");
+        textViewStudentList?.setText(studentsList.toString());
 
     }
 
     fun initialListener(){
         btnSortByName!!.setOnClickListener(View.OnClickListener {
-            textViewStudentList?.setText("asddsa");
-//            textViewStudentList?.setText(sort.sortByName(studentsList).toString());
+            textViewStudentList?.setText(sort.sortByName(studentsList).toString());
         })
-//        btnSortRandom!!.setOnClickListener(View.OnClickListener {
-//            textViewStudentList?.setText(sort.sortRandom(studentsList).toString());
-//        })
+        btnSortRandom!!.setOnClickListener(View.OnClickListener {
+            textViewStudentList?.setText(sort.sortRandom(studentsList).toString());
+        })
     }
 }

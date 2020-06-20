@@ -77,5 +77,12 @@
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:text="@string/activity_project_btn_open_test_game" />
+
+    <Button
+        android:id="@+id/btnOpenStudents"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:text="@string/activity_project_btn_open_students" />
 </LinearLayout>
 </ScrollView>

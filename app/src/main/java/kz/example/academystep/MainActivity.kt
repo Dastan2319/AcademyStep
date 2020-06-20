@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     var btnOpenPicture:Button?=null;
     var btnOpenRegistration:Button?=null;
     var btnOpenTestGame:Button?=null;
-
+    var btnOpenStudents:Button?=null;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -42,6 +42,7 @@ class MainActivity : AppCompatActivity() {
         editTextSendMsg=findViewById(R.id.editTextSendMsg)
         btnOpenPicture=findViewById(R.id.btnOpenPicture);
         btnOpenTestGame=findViewById(R.id.btnOpenTestGame)
+        btnOpenStudents=findViewById(R.id.btnOpenStudents)
     }
 
     fun initListener(){
@@ -83,6 +84,9 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this,TestActivity::class.java);
             startActivity(intent);
         })
-
+        btnOpenStudents!!.setOnClickListener(View.OnClickListener {
+            val intent=Intent(this,StudentActivity::class.java);
+            startActivity(intent);
+        })
     }
 }
